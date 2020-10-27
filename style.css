@@ -1,0 +1,222 @@
+.nav{
+    position: fixed;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav>ul>li{
+    display: inline;
+    margin: 0 20px;
+}
+.nav>ul>li>a{
+    text-decoration: none;
+    color: black;
+}
+.nav>ul>li>a:hover{
+    text-decoration: none;
+    color: red;
+}
+body{
+    background-color: black;
+    background-image: url(img/Asset1.png);
+    background-repeat: no-repeat;
+    background-size: 35%;
+}
+.judul{
+    font-size: 150px;
+    font-family: Josefin Sans, sans-serif;
+    color: white;
+    margin-top: 150px;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+}
+.content{
+    width: 350px;
+    margin-top: 10px;
+    margin: auto;
+    color: white;
+    font-family: josefin sans, sans-serif;
+}
+.bg>a{
+    display: inline-block;
+    margin : 20px auto;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    outline: 1px solid white;
+    width: 100px;
+    padding: 5px 0;
+    /* border-radius: 15px; */
+    text-align: center;
+}
+.link{
+    color: white;
+    font-weight: 200;
+    margin-top: 130px;
+    margin-right: 40px;
+    text-align: end;
+    margin-bottom: 110px;
+}
+.ig{
+    display: block;
+    width: 100% !important;
+    height: 200px;
+    margin-left: -40px;
+}
+.galery{
+    width: 80%;
+    /* margin: 30px auto; */
+    margin: auto;
+    /* border: 2px solid orangered; */
+    list-style: none;
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
+}
+.saran{
+    color: white;
+    width: 80%;
+    margin: 20px auto;
+    display: grid;
+    /* border: 2px solid orangered; */
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "gambar text"
+    "text1 gambar1";
+    list-style: none;
+    grid-gap: 20px;
+    font-family: Josefin Sans, sans-serif;
+}
+.ig2{
+    display: block;
+    width: 100% !important;
+    height: 400px;
+}
+
+
+@media (max-width:900px){
+    body{
+        background-color: black;
+        background-image: none;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .logo{
+        display: flex;
+        justify-content: flex-end;
+        /* position: absolute; */
+    }
+    .bg{
+        background-color: black;
+        background-image: url(img/Asset1.png);
+        background-repeat: no-repeat;
+        background-size: 90%;
+    }
+    .judul{
+        font-size: 64px;
+        font-family: Josefin Sans, sans-serif;
+        color: white;
+        margin: 200px 0 10px 0;
+        text-align: center;
+        font-family: Montserrat, sans-serif;
+    }
+    .content{
+        width: 350px;
+        margin-top: 10px;
+        margin: auto;
+        color: white;
+        font-family: josefin sans, sans-serif;
+    }
+    .bg>a{
+        display: inline-block;
+        margin : 20px auto;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        background-color: red;
+        outline: 1px solid white;
+        width: 100px;
+        padding: 5px 0;
+        /* border-radius: 15px; */
+        text-align: center;
+    }
+    .link{
+        margin-bottom: 0;
+    }
+    .judul{
+        font-size: 64px;
+        font-family: Josefin Sans, sans-serif;
+        color: white;
+        margin-top: 50px;
+        text-align: center;
+        font-family: Montserrat, sans-serif;
+    }
+}
+@media (max-width:580px){
+    .galery{
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(412px, 2fr));
+    }
+    .saran{
+        color: white;
+        width: 80%;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "gambar"
+        "text"
+        "gambar1"
+        "text1";
+        list-style: none;
+    }
+    .satu{
+        grid-area: gambar;
+    }
+    .dua{
+        grid-area: text;
+    }
+    .tiga{
+        grid-area: text1;
+    }
+    .empat{
+        grid-area: gambar1;
+    }
+    .rata{
+        margin-left: -22px;
+    }
+    .nav{
+        position: fixed;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    }
+    .nav>ul>li{
+        display: inline;
+        margin: 0 20px;
+    }
+    .nav>ul>li>a{
+        text-decoration: none;
+        color: black;
+    }
+    .nav>ul>li>a:hover{
+        text-decoration: none;
+        color: red;
+    }
+
+}
